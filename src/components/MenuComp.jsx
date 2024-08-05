@@ -11,6 +11,7 @@ const MenuList = () => {
     <div
       style={{
         backgroundColor: "#1F2029",
+        color:"#fff",
         padding: "35px",
         borderRadius: "10px",
       }}
@@ -20,19 +21,20 @@ const MenuList = () => {
           <div style={{
               backgroundColor: item.color,
               borderRadius: "50%",
-              width: "60px",
-              height: "60px",
+              width: "60px",  
+              height: "60px", 
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
               marginRight: "15px",
+              fontSize: "30px", 
             }}
           >
             {item.icon}
           </div>
           <span className="flex-grow-1 fs-4">{item.label}</span>
           <span style={{ color: "#A9A9A9" }}>
-            <i class="bi bi-chevron-right"></i>
+            <i className="bi bi-chevron-right"></i>
           </span>
         </div>
       ))}
